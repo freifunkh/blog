@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-	{{ page.title }}
-</h1>
-<p class="subtitle">
-	<strong>{{ page.date }}</strong>
-</p>
-{{ page.content | safe }}
+
+	<p style="font-size: larger;">
+		<a href="..">&larr; zurück</a>
+	</p>
+
+	<h2>
+		{{ page.title }}
+		<small class="blog-dt">{{ page.date }}</small>
+	</h2>
+
+	<div>
+		{{ page.content | safe }}
+	</div>
 {% endblock content %}
