@@ -8,7 +8,12 @@
 	</h2>
 
 	<div>
-		{{ page.summary | safe }}
+		{% if page.summary %}
+			{{ page.summary | safe }}
+			<a href="{{ page.permalink }}">weiterlesen &rarr;</a>
+		{% else %}
+			{{ page.content | safe }}
+		{% endif %}
 	</div>
 {% endfor %}
 
