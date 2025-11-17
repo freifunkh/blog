@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <title>MyBlog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../favicon.ico">
+	<title>Freifunk Hannover – Blog</title>
+	<link href="../style.css" rel="stylesheet">
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock content %}
-    </div>
-  </section>
-</body>
+	<nav>
+		<a href="/" id="titlelink">hannover.freifunk.net</a>
+		<ul id="menu-wide">
+			<li><a href="/karte/">Karte</a></li>
+			<li><a href="/wiki/Freifunk/WebHome">Wiki</a></li>
+			<li><a href="/download/">Download</a></li>
+			<li><a href="/wiki/Freifunk/Unterstuetzer">Unterstützer</a></li>
+			<li><a href="https://stats.ffh.zone/d/L9p06EYWk/supernodes-totals">Statistiken</a></li>
+			<li><a href="https://hannover.freifunk.net/wiki/Freifunk/Chat">Webchat</a></li>
+			<li><a href="/friedhof/">Friedhof</a></li>
+			<li><a href="/wiki/Freifunk/Kontakt">Kontakt</a></li>
+		</ul>
+		<details id="menu-narrow">
+			<summary>
+				<img src="../img/burger.svg">
+			</summary>
+			<ul>
+				<li><a href="/karte/">Karte</a></li>
+				<li><a href="/wiki/Freifunk/WebHome">Wiki</a></li>
+				<li><a href="/download/">Download</a></li>
+				<li><a href="/wiki/Freifunk/Unterstuetzer">Unterstützer</a></li>
+				<li><a href="https://stats.ffh.zone/d/L9p06EYWk/supernodes-totals">Statistiken</a></li>
+				<li><a href="https://hannover.freifunk.net/wiki/Freifunk/Chat">Webchat</a></li>
+				<li><a href="/friedhof/">Friedhof</a></li>
+				<li><a href="/wiki/Freifunk/Kontakt">Kontakt</a></li>
+			</ul>
+		</details>
+	</nav>
 
+	<header>
+		<div>
+			<h1>Freifunk Hannover – Blog</h1>
+			<img src="img/logo.svg">
+		</div>
+	</header>
+
+	<main>
+		<div id="content">
+			<section class="section">
+				<div class="container">
+					{% block content %} {% endblock content %}
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="container">
+		<p>
+			Freifunk Hannover ist Dein von Störerhaftung befreites freies WLAN für ganz Hannover.
+			<a href="wiki/Freifunk/Impressum">Impressum</a>
+		</p>
+	</footer>
+
+</body>
 </html>
