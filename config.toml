@@ -1,11 +1,13 @@
-# The URL the site will be built for
 base_url = "https://hannover.freifunk.net/blog/"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+generate_feeds = true
+author = "Freifunk Hannover"
+default_language = "de"
+minify_html = true
+hard_link_static = true
+generate_sitemap = false
+generate_robots_txt = false
 
 [markdown]
 # Whether to do syntax highlighting
