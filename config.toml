@@ -1,3 +1,5 @@
+title = "Freifunk Hannover – Blog"
+description = "Freies WLAN in und um Hannover"
 base_url = "https://hannover.freifunk.net/blog/"
 compile_sass = true
 build_search_index = false
